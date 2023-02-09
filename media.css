@@ -1,0 +1,251 @@
+@media screen and (max-width: 1024px){
+        
+    .hero-container{
+        height: 800px;
+        background: url(/img/desktop/image-header.jpg) no-repeat center ;
+        background-size: cover;
+        transition: 1s;
+    }
+
+    .desktop-img{
+        display: none;
+    }
+
+    .mobile-img{
+        display: block;
+        width: 100%;
+    }
+        
+    .middle-container, .second-container{
+       display: block;
+       width: 100%;
+    }
+
+    .middle-container img, .second-container img{
+        width: 100%;
+        
+    }
+
+    .middle-info-container{
+        padding: 3rem;
+        display: grid;
+        place-items: center;
+    }
+
+    .middle-info-container h1, .second-info-container h1{
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .middle-info-container p, .second-info-container p{
+        text-align: center;
+        margin-top: 3rem;
+        line-height: 2rem;
+        max-width: 100%;
+        font-size: 1.3rem;
+        
+    }
+
+    .middle-container hr, .second-container hr{
+        margin: -0.5rem auto;
+        width: 38%;
+        border: none;
+        border-radius: 40px;
+        background-color: yellow;
+        height: 7px;
+    }
+
+    .middle-info-container{
+        width: 100%;
+    }
+
+    .middle-container .learn-more, .second-container .learn-more{
+        margin-top: 5rem;
+    }
+    
+    /*SECOND*/
+
+    .second-container hr{
+        width: 150px;
+        background-color: rgb(245, 147, 163);
+        margin: -0.5rem auto;
+    }
+
+    .second-info-container{
+        width: 100%;
+    }
+    
+    /*THIRD*/
+
+    .third-container p{
+        padding: 0 2rem 3rem 2rem;
+        margin-top: 1.5rem;
+        line-height: 25px;
+        font-weight: 600;
+        max-width: 375px;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    /*PEOPLE*/
+
+    .people-container{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*IMAGES*/
+    
+    .images-footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*FOOTER*/
+    
+
+    .footer-container img{
+        
+    }
+
+    footer nav{
+        display: grid;
+        margin-top: 3rem;
+        place-content: center;
+    }
+
+    .footer-logo{
+        display: grid;
+        place-content: center;
+    }
+
+    .footer-logo img{
+        width: 250px;
+    }
+
+    .footer-container a{
+        font-size: 1.2rem;
+        color: hsla(168, 35%, 31%, 0.87)
+    }
+
+    .footer-container a:hover{
+        color: white;
+        transition: 1s;
+    }
+
+    .socmeds-container{
+        cursor: pointer;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .socmeds-container img{
+        width: 25px;
+    }
+}
+
+
+@media screen and (max-width: 769px){
+
+    /*HEADER*/
+
+    .hero-container h1{
+        font-size: 2.8rem;
+        padding: 0 1rem;
+       
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+        
+    .header-nav ul{
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: -500px;
+        left: 35px;
+        right: 35px;
+        background-color: white;
+        transition: 1s;
+    }
+
+    .header-nav ul.active{
+        top: 70px;
+    }
+
+    .header-nav li{
+        padding: 1rem;
+    }
+
+    .header-nav a{
+        color: rgba(0, 0, 0, 0.808);
+        font-size: 1rem;
+        text-decoration: none;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .contact{
+        margin-bottom: 10px;
+    }
+
+    .contact a{
+        margin: 0;
+        border-radius: 30px;
+        padding: 1rem 1.5rem;
+        font-family: 'Fraunces', serif;
+        background-color: rgb(243, 243, 7);
+        color: rgba(0, 0, 0, 0.808);
+    }
+
+    .contact a:hover{
+        color: rgba(0, 0, 0, 0.808);
+        background-color: rgb(243, 243, 7);
+    }
+
+    /*MIDDLE*/
+    
+    .middle-info-container{
+        width: 100%;
+        display: block;
+    }
+
+    /*SECOND*/
+
+    .second-info-container{
+        padding: 6rem 2rem;
+    }
+
+    /*THIRD*/
+
+    .third-container{
+        flex-direction: column;
+    }
+
+    .third-container h1{
+        margin: 0;
+        padding-top: 50rem;
+        font-size: 3rem;
+    }
+
+    .third-container p{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        max-width: 580px;
+    }
+
+    .cherry-container{
+        height: 100%;
+        background: url(/img/mobile/image-graphic-design.jpg) no-repeat center;
+    }
+
+    .orange-container{
+        height: 100%;
+        background: url(/img/mobile/image-photography.jpg) no-repeat center;
+
+    }
+}

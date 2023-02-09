@@ -1,0 +1,348 @@
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+### Neutral
+
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+
+- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+- Weights: 600
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700, 900 */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+.header-container{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+
+.header-nav ul, footer ul{
+    display: flex;
+}
+
+.header-nav li, footer li{
+    list-style: none;
+}
+
+.header-nav a, footer a{
+    font-size: .9rem;
+    padding: 1.5rem;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+.contact a{
+    margin-left: 1rem;
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+    font-family: 'Fraunces', serif;
+    background-color: white;
+    color: hsl(167, 40%, 24%);
+    text-transform: uppercase;
+}
+
+.contact a:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.308);
+    transition: 1s;
+}
+
+.hamburger{
+    display: none;
+}
+
+/*HERO*/
+
+.hero-container{
+    height: 100vh;
+    background: url(/img/desktop/image-header.jpg) no-repeat center ;
+    background-size: cover;
+    transition: 1s;
+}
+
+.hero-header{
+    margin-top: 3rem;
+    font-family: 'Fraunces', serif;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    display: grid;
+    place-items: center;
+    letter-spacing: 0.5rem;
+}
+
+
+.hero-container h1{
+    font-size: 3rem;
+}
+
+
+.hero-header img{
+    margin-top: 6rem;
+    width: 30px;
+}
+
+/*MIDDLE*/
+
+.mobile-img{
+    display: none;
+}
+
+.middle-container, .second-container{
+    transition: 1s;
+    display: flex;
+}
+
+.middle-info-container{
+    padding: 6rem;
+    width: 50%;
+}
+
+.middle-info-container h1, .second-info-container h1{
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+   
+}
+
+.middle-info-container p, .second-info-container p{
+    margin-top: 1.5rem;
+    color: hsl(210, 4%, 67%);
+    line-height: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    
+}
+
+.middle-container .learn-more, .second-container .learn-more{
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    color:  hsl(212, 27%, 19%);
+    margin-top: 2rem;
+}
+
+.desktop-img{
+    width: 50%;
+}
+
+.middle-container img, .second-container img{
+    width: 50%;
+}
+
+.middle-container hr, .second-container hr{
+    margin: -0.5rem 0 0 -0.3rem;
+    width: 26%;
+    border: none;
+    border-radius: 40px;
+    background-color: yellow;
+    height: 7px;
+}
+
+.learn-more{
+    cursor: pointer;
+}
+
+/*SECOND*/
+
+.second-info-container{
+    padding: 6rem;
+    width: 50%;
+}
+
+.second-container hr{
+    background-color: rgb(245, 147, 163);
+}
+
+
+/*THIRD*/
+
+.third-container{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.third-container h1{
+    font-family: 'Fraunces', serif;
+    margin-top: 25rem;
+}
+
+.third-container p{
+    padding-bottom: 3rem;
+    margin-top: 1.5rem;
+    line-height: 25px;
+    font-weight: 600;
+    max-width: 375px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.cherry-container{
+    display: grid;
+    place-items: center;
+    background: url(/img/desktop/image-graphic-design.jpg) no-repeat center;
+    width: 100%;
+    color: hsl(167, 40%, 24%);
+}
+
+.orange-container{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    background: url(/img/desktop/image-photography.jpg) no-repeat center;
+    color: hsl(212, 27%, 19%);
+}
+
+/*PEOPLE*/
+
+.people-container{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    padding: 0 3rem;
+    padding-bottom: 8rem;
+}
+
+.client-testimonals{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: 0.6rem;
+
+}
+
+.comment-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment{
+    color: hsl(232, 10%, 55%);
+    margin: 4rem 0;
+    line-height: 1.4rem;
+    padding: 0 3rem;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+.comment-container img{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.name{
+    text-align: center;
+    font-size: 1rem;
+    color:  hsl(212, 27%, 19%);
+    font-family: 'Fraunces', serif;
+}
+
+.job{
+    margin-top: 0.5rem;
+    color: hsl(210, 4%, 67%);
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+/*IMAGES*/
+
+.images-footer-container{
+    display: flex;
+}
+
+.images-footer-container img{
+    width: 100%;
+}
+
+/*FOOTER*/
+
+.footer-container{
+    padding: 5rem;
+    background-color: hsla(168, 39%, 49%, 0.87);
+}
+
+footer nav{
+    display: grid;
+    margin-top: 3rem;
+    place-content: center;
+}
+
+.footer-logo{
+    display: grid;
+    place-content: center;
+}
+
+.footer-logo img{
+    width: 170px;
+}
+
+.footer-container a{
+    color: hsla(168, 35%, 31%, 0.87)
+}
+
+.footer-container a:hover{
+    color: white;
+    transition: 1s;
+}
+
+.socmeds-container{
+    cursor: pointer;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
